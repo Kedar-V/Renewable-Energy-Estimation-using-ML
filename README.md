@@ -73,3 +73,22 @@ The dataset contains the following columns:
 ##### Short-Term Forcasting :
 6 month of data for training, predicting for 1 month after 15 days gap
 
+<img src="https://github.com/Kedar-V/Renewable-Energy-Estimation-using-ML/blob/main/shortterm_scheduling.png" alt="datab" height=250/>
+
+##### Long-Term Forcasting :
+6 month of data for training, predicting for 1 month after 15 days gap
+
+<img src="https://github.com/Kedar-V/Renewable-Energy-Estimation-using-ML/blob/main/longterm_scheduling.png" alt="datab" height=250/>
+
+## Results :
+
+### Normal training strategy (80% training, 20% random testing) :
+<img src="https://github.com/Kedar-V/Renewable-Energy-Estimation-using-ML/blob/main/normal_result.png" alt="datab" height=250/>
+
+### Short-term forcasting
+
+<img src="https://github.com/Kedar-V/Renewable-Energy-Estimation-using-ML/blob/main/Shortterm_result.png" alt="datab" height=250/>
+
+### Long-term forcasting
+
+<img src="https://github.com/Kedar-V/Renewable-Energy-Estimation-using-ML/blob/main/Longterm_result.png" alt="datab" height=250/>
