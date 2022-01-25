@@ -39,3 +39,37 @@ The dataset contains the following columns:
 | blade_breadth(m) | Represents the breadth of the blades of a windmill (in meter)|
 | windmill_height(m) | Represents the height of the blades of a windmill (in meter)|
 | windmill_generated_power(kW/h)|	Represents the power generated (in Kilo Watt per hour)|
+
+## MY APPROACH : 
+
+### 1. Data Preprocessing :
+
+#### Problems with current dataset:
+* Large number of missing data (22k rows have missing value in training data)
+* 207 rows have missing target variable (generated power)
+* Very noisy data set
+  * 2905 rows have wind speed >113 m/s
+  * Negative values for wind speed, windmill height, blade length, resistance and other variables
+
+#### Data preprocessing techniques:
+* To deal with missing values, imputer was defined, and appropriate values were inserted. 
+* For missing values in atmospheric_temperature, mean of the month was used.
+* Values like -99, -999, 999 were treated as missing values (as it is common practice while data wrangling to replace missing values with these)
+* For impossible values for variables, clipping was used to make their values in permissible range.
+* For negative values of features like resistance, windmill height, absolutes were taken.
+
+### 2. Feature Engineering :
+
+* Creation of date-time features (like month, seasons)
+* Mean features of wind speed, temperatures calculated over per month, per seasons, per time-frame
+* Moving average features for wind speed, atmospheric temperature, motor torque
+* Transform categorical (or non-numerical features) into numerical with custom label encoding which takes similarity into consideration
+* Features related to the impossible values of wind_speed, temperature
+
+### 3. Modelling :
+
+#### Training Strategy :
+
+##### Short-Term Forcasting :
+6 month of data for training, predicting for 1 month after 15 days gap
+
