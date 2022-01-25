@@ -70,12 +70,12 @@ The dataset contains the following columns:
 
 #### Training Strategy :
 
-##### Short-Term Forcasting :
+##### 1. Short-Term Forcasting :
 6 month of data for training, predicting for 1 month after 15 days gap
 
 <img src="https://github.com/Kedar-V/Renewable-Energy-Estimation-using-ML/blob/main/shortterm_scheduling.png" alt="datab" height=250/>
 
-##### Long-Term Forcasting :
+##### 2. Long-Term Forcasting :
 6 month of data for training, predicting for 1 month after 15 days gap
 
 <img src="https://github.com/Kedar-V/Renewable-Energy-Estimation-using-ML/blob/main/longterm_scheduling.png" alt="datab" height=250/>
